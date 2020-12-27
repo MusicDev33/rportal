@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { RNavbar } from 'components/RNavbar/RNavbar';
 
 function Home() {
   return <h2>Home</h2>;
@@ -23,6 +24,7 @@ function App() {
   return (
     <Router>
       <div>
+        <RNavbar></RNavbar>
         <nav>
           <ul>
             <li className='test'>
