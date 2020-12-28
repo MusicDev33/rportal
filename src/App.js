@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import { RNavbar } from 'components/RNavbar/RNavbar';
+import { CPUGraph } from 'components/CPUGraph/CPUGraph';
 
 function Home() {
   return <h2>Home</h2>;
@@ -25,19 +26,13 @@ function App() {
     <Router>
       <div>
         <RNavbar></RNavbar>
-        <nav>
-          <ul>
-            <li className='test'>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
+        <div className='container'>
+          <div className="row">
+            <div className="col text-center">
+              <CPUGraph></CPUGraph>
+            </div>
+          </div>
+        </div>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
