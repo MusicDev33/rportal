@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { RNavbar } from 'components/RNavbar/RNavbar';
 import { CPUGraph } from 'components/CPUGraph/CPUGraph';
+import { WifiGraph } from 'components/WifiGraph/WifiGraph';
 
 function Home() {
   return <h2>Home</h2>;
@@ -30,7 +31,12 @@ function App() {
           <div className="row">
             <div className="col text-center">
               <h1 className='mb-4'>Pi #2</h1>
-              <CPUGraph></CPUGraph>
+              <div className='mb-2'>
+                <CPUGraph></CPUGraph>
+              </div>
+              <div className='mb-2'>
+                <WifiGraph></WifiGraph>
+              </div>
             </div>
           </div>
         </div>
