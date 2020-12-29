@@ -29,6 +29,7 @@ function App() {
         <div className='container'>
           <div className="row">
             <div className="col text-center">
+              <h1 className='mb-4'>Pi #2</h1>
               <CPUGraph></CPUGraph>
             </div>
           </div>

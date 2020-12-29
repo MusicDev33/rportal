@@ -108,8 +108,11 @@ export class CPUGraph extends React.Component {
 
   render() {
     return (
-      <div className={'px-3 ' + styles['glass-chart']}>
-        <canvas id='cpuChart' ref={this.chartRef}/>
+      <div>
+        <h4>CPU Usage</h4>
+        <div className={'px-3 r-card hvr'}>
+          <canvas id='cpuChart' ref={this.chartRef}/>
+        </div>
       </div>
     );
   }
